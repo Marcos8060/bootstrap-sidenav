@@ -1,9 +1,10 @@
 import './App.css';
+import MiniDrawer from './Navabar';
 
 function App() {
   return (
     <div className="App">
-      <p>This is the sidebar</p>
+      <MiniDrawer />
     </div>
   );
 }
