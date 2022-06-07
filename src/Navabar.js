@@ -17,6 +17,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
+import './App.css'
 
 const drawerWidth = 240;
 
@@ -99,12 +100,14 @@ export default function MiniDrawer() {
     <div className={classes.root}>
       <CssBaseline />
       <AppBar
+      style={{ backgroundColor: '#EEF5FB',color:'black',boxShadow:'none'}}
         position="fixed"
         className={clsx(classes.appBar, {
           [classes.appBarShift]: open,
         })}
       >
-        <Toolbar>
+          <div className='top'>
+          <Toolbar>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -117,9 +120,13 @@ export default function MiniDrawer() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap>
-            Mini variant drawer
+               Zolacar
           </Typography>
         </Toolbar>
+        <Typography variant="h6" noWrap>
+               Welcome Marcos
+          </Typography>
+          </div>
       </AppBar>
       <Drawer
         variant="permanent"
